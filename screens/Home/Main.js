@@ -1,12 +1,11 @@
 import React from 'react'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import Feed from './components/Feed'
-import Profile from './components/Profile'
-import Reels from './components/Reels';
-import Search from './components/Search';
-import Notifications from './components/Notifications';
+import Feed from './screens/Feed'
+import Profile from './screens/Profile'
+import Reels from './screens/Reels';
+import Search from './screens/Search';
+import Notifications from './screens/Notifications';
 import { Icon } from '@rneui/themed';
-import { Text } from 'react-native';
 
 const Main = () => {
     const Tab = createBottomTabNavigator();
