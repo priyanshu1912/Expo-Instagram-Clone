@@ -10,7 +10,9 @@ import { Icon } from '@rneui/themed';
 const Main = () => {
     const Tab = createBottomTabNavigator();
   return (
-    <Tab.Navigator screenOptions={({route}) => (
+    <Tab.Navigator 
+    sceneContainerStyle={{backgroundColor:'white'}} 
+    screenOptions={({route}) => (
         {
             headerShown: false,
             tabBarShowLabel: false,

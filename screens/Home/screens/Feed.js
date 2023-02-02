@@ -1,24 +1,13 @@
-import { Text, SafeAreaView, View, Image, TouchableOpacity } from 'react-native'
+import { SafeAreaView, ScrollView } from 'react-native'
 import React from 'react'
-import {Icon} from '@rneui/themed'
+import FeedPost from '../../../components/FeedPost'
+import Header from '../../../components/Header'
 
-const Feed = ({navigation}) => {
+const Feed = () => {
   return (
-    <SafeAreaView>
-      <View className='px-3'>
-      <View className='flex flex-row items-center justify-between'>
-        <TouchableOpacity onPress={()=>navigation.navigate('Register')} >
-          <Image style={{width:120, height:80, resizeMode:'contain'}} source={{uri:'https://logos-world.net/wp-content/uploads/2020/04/Instagram-Logo-2010-2013.png'}}/>
-        </TouchableOpacity>
-        <View className='flex flex-row items-center gap-5'>
-          <TouchableOpacity onPress={()=>navigation.navigate('CameraScreen')}>
-          <Icon type='feather' name='plus-square' />
-          </TouchableOpacity>
-          <Icon type='feather' name='send' />
-        </View>
-      </View>
-
-      </View>
+    <SafeAreaView style={{flex:1}}>
+      <Header/>
+      <FeedPost/>
     </SafeAreaView>
   )
 }
